@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.fwms.eventouchdemo.MyLinelayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.example.fwms.eventouchdemo.MyButton
+        android:id="@+id/mBt"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="view事件"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+</com.example.fwms.eventouchdemo.MyLinelayout>
