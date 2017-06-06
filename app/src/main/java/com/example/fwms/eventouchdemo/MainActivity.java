@@ -14,7 +14,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.mBt).setOnTouchListener(new View.OnTouchListener() {
+        //initView(R.id.mBt1);
+      // initView(R.id.mBt2);
+
+    }
+
+    private void initView(int mBt) {
+        findViewById(mBt).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 int action = event.getAction();
@@ -36,5 +42,19 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+      /* findViewById(mBt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e(TAG,"OnClickListener");
+            }
+        });
+        findViewById(mBt).setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Log.e(TAG,"OnLongClickListener");
+                return false;
+            }
+        });*/
+
     }
 }
